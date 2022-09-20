@@ -39,9 +39,9 @@ public class Main {
         return name + " " + surname;
     }
     public static int noOfChars (String[] products){
-        String finalString = "";
+        StringBuilder finalString = new StringBuilder();
         for (String product : products) {
-            finalString += product;
+            finalString.append(product);
         }
         return finalString.length();
     }
